@@ -34,7 +34,7 @@ BEGIN
     END IF;
 
     -- Atualiza tabela de promocoes
-    UPDATE promocoes SET nivel = novoNivel WHERE funcionario_id = funcionarioID;
+    UPDATE promocoes SET nivel = novoNivel, ultimaAtualizacao = date(now()) WHERE funcionario_id = funcionarioID;
     RETURN 1;
 END;
 $$ LANGUAGE plpgsql;
