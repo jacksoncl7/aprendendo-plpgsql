@@ -1,6 +1,6 @@
-DROP TABLE IF EXISTS funcionario;
+DROP TABLE IF EXISTS funcionarios;
 
-CREATE TABLE funcionario (
+CREATE TABLE funcionarios (
 "nome" VARCHAR(60) NOT NULL,
 "email" VARCHAR(60) NOT NULL,
 "sexo" VARCHAR(10) NOT NULL,
@@ -17,6 +17,7 @@ CREATE TABLE funcionario (
 "login" VARCHAR(12) NOT NULL,
 "senha" VARCHAR(12) NOT NULL,
 "news" VARCHAR(8),
-"id" INT);
+"id" SERIAL PRIMARY KEY);
 
-INSERT INTO funcionario (nome, email, sexo, salario, telefone, ativo, endereco, cpf, cidade, estado,bairro, pais, login, senha) VALUES('Juremias', 'email', 'sexo', 1000000, 'telefone', '1', 'endereco', '1234', 'cidade', 'RJ', 'bairro', 'pais', 'login', 'senha');
+-- INSERT TEST
+INSERT INTO funcionarios (nome, email, sexo, salario, telefone, ativo, endereco, cpf, cidade, estado,bairro, pais, login, senha) VALUES('Juremias', 'email', 'sexo', 1000000, 'telefone', 'S', 'endereco', '1234', 'cidade', 'RJ', 'bairro', 'pais', 'login', 'senha');

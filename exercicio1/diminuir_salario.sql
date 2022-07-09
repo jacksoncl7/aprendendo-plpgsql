@@ -6,12 +6,12 @@ DECLARE
    montante integer;
    salarioNovo INTEGER;
 BEGIN
-   SELECT funcionario.salario INTO montante FROM funcionario WHERE funcionario.cpf = cpfUsuario;
+   SELECT funcionarios.salario INTO montante FROM funcionarios WHERE funcionarios.cpf = cpfUsuario;
    SELECT  montante * percentualFinal INTO salarioNovo;
-   UPDATE funcionario SET salario = salarioNovo WHERE funcionario.cpf = cpfUsuario;
+   UPDATE funcionarios SET salario = salarioNovo WHERE funcionarios.cpf = cpfUsuario;
 END;
 $$ LANGUAGE plpgsql;
 
--- Exemplo de consulta
+-- QUERY test
 -- SELECT diminuirSalario('1234', 78);
--- SELECT cpf, salario FROM funcionario;
+-- SELECT cpf, salario FROM funcionarios;
