@@ -1,4 +1,4 @@
-# Introdução PlPGSQL
+# Introdução PLPGSQL
 
 Exercício de aula da disciplina (TCC00335) PROJETO de BANCO DE DADOS.
 
