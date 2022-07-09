@@ -20,4 +20,4 @@ CREATE TABLE funcionarios (
 "id" SERIAL PRIMARY KEY);
 
 -- INSERT TEST
-INSERT INTO funcionarios (nome, email, sexo, salario, telefone, ativo, endereco, cpf, cidade, estado,bairro, pais, login, senha) VALUES('Juremias', 'email', 'sexo', 1000000, 'telefone', 'S', 'endereco', '1234', 'cidade', 'RJ', 'bairro', 'pais', 'login', 'senha');
+-- INSERT INTO funcionarios (nome, email, sexo, salario, telefone, ativo, endereco, cpf, cidade, estado,bairro, pais, login, senha) VALUES('Juremias', 'email', 'sexo', 1000000, 'telefone', 'S', 'endereco', '1234', 'cidade', 'RJ', 'bairro', 'pais', 'login', 'senha');
