@@ -2,7 +2,7 @@ DROP TABLE IF EXISTS faltas;
 
 
 CREATE TABLE IF NOT EXISTS faltas (
-    funcionario_id INT NOT NULL,
+    funcionario_id INTEGER NOT NULL,
     justificativa VARCHAR(250) NOT NULL,
     CONSTRAINT fk_funcionario FOREIGN KEY (funcionario_id) REFERENCES funcionarios(id)
 );

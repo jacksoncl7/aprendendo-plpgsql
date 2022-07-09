@@ -4,7 +4,7 @@ CREATE TABLE funcionarios (
 "nome" VARCHAR(60) NOT NULL,
 "email" VARCHAR(60) NOT NULL,
 "sexo" VARCHAR(10) NOT NULL,
-"ddd" INT,
+"ddd" INTEGER,
 "salario" DECIMAL,
 "telefone" VARCHAR (8),
 "ativo" VARCHAR(1),

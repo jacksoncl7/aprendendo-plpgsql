@@ -3,7 +3,7 @@ CREATE OR REPLACE FUNCTION diminuirSalario (cpfUsuario varchar, percentual int) 
 $$
 DECLARE
    percentualFinal DECIMAL := (1.0 - percentual/100.0);
-   montante integer;
+   montante INTEGER;
    salarioNovo INTEGER;
 BEGIN
    SELECT funcionarios.salario INTO montante FROM funcionarios WHERE funcionarios.cpf = cpfUsuario;
